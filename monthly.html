@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monthly To-Do List</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li><a href="daily.html">Daily</a></li>
+      <li><a href="monthly.html" class="active">Monthly</a></li>
+      <li><a href="yearly.html">Yearly</a></li>
+    </ul>
+  </nav>
+  <div class="todo-container">
+    <h1>Monthly To-Do List</h1>
+    <div class="input-group">
+      <input type="text" id="todo-input" placeholder="Add a new task..."/>
+      <button id="add-btn">Add</button>
+    </div>
+    <ul id="todo-list"></ul>
+  </div>
+  <script>
+    window.todoKey = 'todos-monthly';
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
